@@ -1,61 +1,84 @@
 
-function displayPath() {
 
-    var path = [document.getElementById('NY').checked,
-                document.getElementById('doggo').checked,
-                document.getElementById('yoga').checked,
-                document.getElementById('bubbleWrap').checked,
-                document.getElementById('pillowFort').checked,
-                document.getElementById('declutter').checked,
-                document.getElementById('bobRoss').checked,
-                document.getElementById('craft').checked];
+var opt1 = document.getElementById('option1').checked;
+var opt2 = document.getElementById('option2').checked;
+var opt3 = document.getElementById('option3').checked;
+var opt1 = document.getElementById('option4').checked;
+var opt2 = document.getElementById('option5').checked;
+var opt3 = document.getElementById('option6').checked;
+var opt1 = document.getElementById('option7').checked;
+var opt2 = document.getElementById('option8').checked;
+var opt3 = document.getElementById('option9').checked;
+var opt1 = document.getElementById('option10').checked;
 
-    //var textPath = path.join(" "); //this is a text version of an array!
+var options = [opt1, opt2, opt3];
+var path = new Array();
 
-    var out = "";
-    var img = "";
-    var text = "";
-    for (var i = 0; i < path.length; i++) {
-      if (path[i]) {
-        switch(i) {
-          case 0:
-            img = "images/NY.jpeg";
-            text = "img0 caption";
-            break;
-          case 1:
-            img = "images/doggo.jpeg";
-            text = "img1 caption";
-            break;
-          case 2:
-            img = "images/yoga.jpeg";
-            text = "img2 caption";
-            break;
-          case 3:
-            img = "images/bubbleWrap.jpg";
-            text = "img3 caption";
-            break;
-          case 4:
-            img = "images/pillowFort.jpg";
-            text = "img4 caption";
-            break;
-          case 5:
-            img = "images/declutter.jpeg";
-            text = "img5 caption";
-            break;
-          case 6:
-            img = "images/bobRoss.jpeg";
-            text = "img6 caption";
-            break;
-          case 7:
-            img = "images/craft.jpeg";
-            text = "img7 caption";
-            break;
-        default:
-          img = "img0.jpg";
-          text = "default caption";
-        }
-        out = out + "<br><figure><img width=\"500px\" height=\"350px\" src=\""+img+"\" alt=\""+text+"\"/><figcaption>"+text+"</figcaption></figure>";
-      }
-    }
-    document.getElementById("pathSpan").innerHTML = out;
+for (i = 0; i < options.length; i++) {
+  if (options[i] == 0) {
+    path.push(options[i]);
+  }
 }
+
+
+
+function displayPath() {
+                /*
+                var e = document.getElementById("ID");
+                var NumOfRepititions = e.options[e.selectedIndex].value;
+                */
+
+                var out = "";
+                var img = null;
+                for (var i = 1; i <= path.length; i++) {
+                  switch(i) {
+                    case 1:
+                      img = img1.jpg;
+                      text = "img4 caption"
+                      break;
+                    case 2:
+                      img = img2.jpg;
+                      text = "img4 caption"
+                      break;
+                    case 3:
+                      img = img3.jpg;
+                      text = "img4 caption"
+                      break;
+                    case 4:
+                      img = img4.jpg;
+                      text = "img5 caption"
+                      break;
+                    case 5:
+                      img = img5.jpg;
+                      text = "img5 caption"
+                      break;
+                    case 6:
+                      img = img6.jpg;
+                      text = "img6 caption"
+                      break;
+                    case 7:
+                      img = img7.jpg;
+                      text = "img7 caption"
+                      break;
+                    case 8:
+                      img = img8.jpg;
+                      text = "img8 caption"
+                      break;
+                    case 9:
+                      img = img9.jpg;
+                      text = "img9 caption"
+                      break;
+                    case 10:
+                      img = img10.jpg;
+                      text = "img10 caption"
+                      break;
+                    default:
+                      img = img0.jpg;
+                      text = "default caption"
+                    }
+                  out = out + "<figure><img src="img" alt="text"/><figcaption>"+text+"</figcaption></figure>";
+                  }
+                }
+                document.getElementById("OUTPUT ID").innerHTML = out;
+            }
+            <!-- OUTPUT ID needs to be the id of the span in the html file -->
