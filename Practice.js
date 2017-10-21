@@ -1,9 +1,6 @@
 
 function displayPath() {
 
-    document.getElementById('updatePath').innerHTML = "hi";
-    document.getElementById("pathSpan").innerHTML = "good bye";
-
     var path = [document.getElementById('NY').checked,
                 document.getElementById('doggo').checked,
                 document.getElementById('yoga').checked,
@@ -12,18 +9,14 @@ function displayPath() {
                 document.getElementById('declutter').checked,
                 document.getElementById('bobRoss').checked,
                 document.getElementById('craft').checked];
-    out = "";
-    for(i = 0; i < path.length; i++) {
-      out = path.join(" ");
-    }
-    document.getElementById("pathSpan").innerHTML = out;
+
+    //var textPath = path.join(" "); //this is a text version of an array!
 
     var out = "";
     var img = "";
     var text = "";
     for (var i = 0; i < path.length; i++) {
       if (path[i]) {
-        document.getElementById('pathSpan').innerHTML = '<p>'+i+'</p>';
         switch(i) {
           case 0:
             img = "images/NY.jpeg";
@@ -61,8 +54,7 @@ function displayPath() {
           img = "img0.jpg";
           text = "default caption";
         }
-        out = out + " hi";
-        //out = out + "<br><figure><img src=\""+img+"\" alt=\""+text+"\"/><figcaption>"+text+"</figcaption></figure>";
+        out = out + "<br><figure><img width=\"500px\" height=\"350px\" src=\""+img+"\" alt=\""+text+"\"/><figcaption>"+text+"</figcaption></figure>";
       }
     }
     document.getElementById("pathSpan").innerHTML = out;
