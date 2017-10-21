@@ -1,4 +1,5 @@
-displayPath() {
+
+function displayPath() {
 
     var path = [document.getElementById('NY').checked,
                 document.getElementById('doggo').checked,
