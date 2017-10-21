@@ -1,10 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
+<title>Practice</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+</style>
 <body>
-
   <script src="Practice.js"></script>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Practice</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header >
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Practice</h1>
+      <h5 class="w3-padding-32">Build a path to help with mental illness. Select the activities you like the best and create a path to success.</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Build Your Own Path</h1>
+      <h5 class="w3-padding-32">Select from the activities below to start your own path.</h5>
+      <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+        <div class="w3-quarter">
+          <img src="C:\users\crrankin\Desktop\NY.jpeg" alt="New York" style="width:100%">
+          <h3>Go on a Vacation</h3>
+          <p>Taking a trip can help you get out of stressful situations and allow you to relax.</p>
+        </div>
+        <div class="w3-quarter">
+          <img src="C:\users\crrankin\Desktop\doggo.jpeg" alt="Doggo" style="width:100%">
+          <h3>Volunteer at an Animal Shelter</h3>
+          <p>Working with animals can help relieve stress and also will help the animals stay happy.</p>
+        </div>
+        <div class="w3-quarter">
+          <img src="C:\users\crrankin\Desktop\yoga.jpeg" alt="Yoga" style="width:100%">
+          <h3>Try Out A New Yoga Class</h3>
+          <p>Practicing deep breathing and mindfullness can help your focus and to clear your mind.</p>
+        </div>
+        <div class="w3-quarter">
+          <img src="C:\users\crrankin\Desktop\bubbleWrap.jpg" alt="Bubble Wrap" style="width:100%">
+          <h3>Pop Bubble Wrap</h3>
+          <p>Bubble wrap is fun to pop and also can clear your mind. Try using it whenever you get upset or need a distraction.</p>
+        </div>
+        </div>
+        <!--Second grid row for Paths -->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+          <div class="w3-quarter">
+            <img src="C:\users\crrankin\Desktop\pillowFort.jpg" alt="Pillow Fort" style="width:100%">
+            <h3>Build A Pillow Fort</h3>
+            <p>Take some time to yourself and build a pillow fort. Watch Netflix or a classic Disney movie.</p>
+          </div>
+          <div class="w3-quarter">
+            <img src="C:\users\crrankin\Desktop\declutter.jpeg" alt="Declutter" style="width:100%">
+            <h3>Declutter A Room</h3>
+            <p>Cleaning out a room can improve your mind and help bring a new feeling.</p>
+          </div>
+          <div class="w3-quarter">
+            <img src="C:\users\crrankin\Desktop\bobRoss.jpeg" alt="Bob Ross" style="width:100%">
+            <h3>Paint With Bob Ross</h3>
+            <p>Watch and paint with Bob Ross. Add the new painting to your house.</p>
+          </div>
+          <div class="w3-quarter">
+            <img src="C:\users\crrankin\Desktop\craft.jpeg" alt="Bubble Wrap" style="width:100%">
+            <h3>Make A DIY Project</h3>
+            <p>Take some time to yourself and make a diy project.</p>
+          </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 </body>
 </html>
