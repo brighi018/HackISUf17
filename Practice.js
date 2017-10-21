@@ -20,39 +20,39 @@ function displayPath() {
         switch(i) {
           case 0:
             img = "images/NY.jpeg";
-            text = "img0 caption";
+            text = "Go on a vacation";
             break;
           case 1:
             img = "images/doggo.jpeg";
-            text = "img1 caption";
+            text = "Volunteer at an animal shelter";
             break;
           case 2:
             img = "images/yoga.jpeg";
-            text = "img2 caption";
+            text = "Try out a new yoga class";
             break;
           case 3:
             img = "images/bubbleWrap.jpg";
-            text = "img3 caption";
+            text = "Pop bubble wrap";
             break;
           case 4:
             img = "images/pillowFort.jpg";
-            text = "img4 caption";
+            text = "Build a pillow fort";
             break;
           case 5:
             img = "images/declutter.jpeg";
-            text = "img5 caption";
+            text = "Declutter a room";
             break;
           case 6:
             img = "images/bobRoss.jpeg";
-            text = "img6 caption";
+            text = "Paint with Bob Ross";
             break;
           case 7:
             img = "images/craft.jpeg";
-            text = "img7 caption";
+            text = "Make a DIY project";
             break;
         default:
-          img = "img0.jpg";
-          text = "default caption";
+          img = null;
+          text = null;
         }
         out = out + "<br><figure><img width=\"500px\" height=\"350px\" src=\""+img+"\" alt=\""+text+"\"/><figcaption>"+text+"</figcaption></figure>";
       }
