@@ -1,4 +1,5 @@
 <meta charset="UTF-8">
+<title>Learn</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -9,7 +10,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 </style>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card-2 w3-left-align w3-large" style = "background-color: #cc99ff">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-#ffcc66" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="Practice.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Practice</a>
+    <a href="learn.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Learn</a>
+    <a href="resources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resources</a>
+    <a href="javascript:void(0);" class="icon" </a>
+  </div>
 
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="Practice.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Practice</a>
+    <a href="learn.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Learn</a>
+    <a href="resources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resources</a>
+  </div>
+</div>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container" style = "background-color: #99ff99">
@@ -29,7 +49,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 
     <div class="w3-third w3-center">
-      <img src="../images/anxiety.jpg" style="float:right" >
+      <img src="images/anxiety.jpg" style="float:right" >
     </div>
   </div>
 </div>
@@ -37,11 +57,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- Second Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container" style = "background-color: #99ccff">
   <div class="w3-content">
-    <div class="w3-third w3-center">
-      <img src="../images/depression.jpg">
+    <div class="w3-twothird">
+      <img src="images/depression.jpg">
     </div>
 
-    <div class="w3-twothird">
+    <div class="w3-third">
       <h1>Depression</h1>
       <h6 class="w3-padding-32">Symptoms include: <ul>
         <li>Anxiety</li>
@@ -53,7 +73,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         <li>Aches and pains</li>
       </ul></h6>
 
-      <p class="w3-text-grey">To manage the symptoms of depression you should excersice, set goals, and find a friend you can confide in. Most importantly, be patient with yourself. If you belive you may have depression, you should talk to your doctor. Some treatments include medication, psychotherapies, and brain stimulation therapies.</p>
+      <p class="w3-text-grey">To manage the symptoms of depression you should excersice, set goals, and find a friend you can confide in.
+         Most importantly, be patient with yourself. If you belive you may have depression, you should talk to your doctor. Some treatments include medication,
+         psychotherapies, and brain stimulation therapies.</p>
     </div>
   </div>
 </div>
