@@ -12,7 +12,7 @@ function displayPath() {
 
     //var textPath = path.join(" "); //this is a text version of an array!
 
-    var out = "<br><br><h2>Your customized path:</h2>";
+    var out = "<br><br><p style=\"font-size: 30pt; color: orange; font-family: sans-serif, comic sans ms;\">Your customized path:</p>";
     var img = "";
     var text = "";
     for (var i = 0; i < path.length; i++) {
@@ -54,8 +54,9 @@ function displayPath() {
           img = null;
           text = null;
         }
-        out = out + "<br><figure><img width=\"500px\" height=\"350px\" src=\""+img+"\" alt=\""+text+"\"/><figcaption style='font-size:3em'>"+text+"</figcaption></figure>";
+        out = out + "<br><figure><img width=\"500px\" height=\"350px\" src=\""+img+"\" alt=\""+text+"\"/><figcaption style='font-size:2em'>"+text+"</figcaption></figure>";
       }
     }
     document.getElementById("pathSpan").innerHTML = out;
+    window.location.hash="pathSpan";
 }
