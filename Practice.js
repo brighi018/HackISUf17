@@ -8,7 +8,11 @@ function displayPath() {
                 document.getElementById('pillowFort').checked,
                 document.getElementById('declutter').checked,
                 document.getElementById('bobRoss').checked,
-                document.getElementById('craft').checked];
+                document.getElementById('craft').checked,
+                document.getElementById('Friends').checked,
+                document.getElementById('hobby').checked,
+                document.getElementById('notes').checked,
+                document.getElementById('magazine').checked];
 
     //var textPath = path.join(" "); //this is a text version of an array!
 
@@ -50,14 +54,30 @@ function displayPath() {
             img = "images/craft.jpeg";
             text = "Make a DIY project";
             break;
+          case 8:
+            img = "images/friends.jpeg";
+            text = "Talk to a friend";
+            break;
+          case 9:
+            img = "images/hobby.jpeg";
+            text = "Practice a hobby";
+            break;
+          case 10:
+            img = "images/notes.jpg";
+            text = "Post positive reminders";
+            break;
+          case 11:
+            img = "images/magazine.jpeg";
+            text = "Throw out things that hold you back";
+            break;
         default:
           img = null;
           text = null;
         }
         var checkhtml = "<input id=\""+img+"\" type=\"checkbox\" name=\"path\" value=\""+text+"\">";
-        var texthtml = "Date completed: <input id=\""+img+"_date\" type=\"text\">";
+        var texthtml = "Date completed: <input id=\""+img+"_date\" type=\"text\" size=\"10\">";
         var imghtml = "<figure>  <img width=\"500px\" height=\"350px\" src=\""+img+"\" alt=\""+text+"\"/>  <figcaption style='font-size:2em'>"+text+"</figcaption> </figure>"
-        out = out + "<br> <p>" + checkhtml + texthtml + "</p>" + imghtml;
+        out = out + "<br> <p>" + checkhtml + '&emsp;' + texthtml + "</p>" + imghtml;
       }
     }
     document.getElementById("pathSpan").innerHTML = out;
