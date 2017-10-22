@@ -54,7 +54,10 @@ function displayPath() {
           img = null;
           text = null;
         }
-        out = out + "<br><figure><img width=\"500px\" height=\"350px\" src=\""+img+"\" alt=\""+text+"\"/><figcaption style='font-size:2em'>"+text+"</figcaption></figure>";
+        var checkhtml = "<input id=\""+img+"\" type=\"checkbox\" name=\"path\" value=\""+text+"\">";
+        var texthtml = "Date completed: <input id=\""+img+"_date\" type=\"text\">";
+        var imghtml = "<figure>  <img width=\"500px\" height=\"350px\" src=\""+img+"\" alt=\""+text+"\"/>  <figcaption style='font-size:2em'>"+text+"</figcaption> </figure>"
+        out = out + "<br> <p>" + checkhtml + texthtml + "</p>" + imghtml;
       }
     }
     document.getElementById("pathSpan").innerHTML = out;
